@@ -1,0 +1,74 @@
+<div class="container-fluid con"  >
+    <div class="row">
+  <nav class="navbar navbar-inverse nava" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+    <div class="row">
+      <div class="mainarea">
+        <form (submit)=addService(add) #add="ngForm">
+          <div class="form-group">
+            
+            <input type="text" class="form-control" id="email" name="name" required placeholder="Name" ngModel required #usernames="ngModel">
+            <!-- <mat-error *ngIf="email.invalid">Password</mat-error> -->
+          </div>
+          
+          
+          <div class="form-group">
+            
+              <input type="text" class="form-control" id="pwd"  name="services" placeholder="Services" ngModel required #services="ngModel">
+              <!-- <mat-error *ngIf="services.invalid">Password</mat-error> -->
+            </div>
+            <div class="form-group">
+            
+              <input type="text" class="form-control" id="location"  name="location" placeholder="location" ngModel required #location="ngModel">
+              <!-- <mat-error *ngIf="passwords.invalid">Password</mat-error> -->
+            </div>
+            <div class="form-group">
+             <p>Enter description about your service</p>
+             <textarea rows="6" cols="100" name="text" required ngModel required #text="ngModel"></textarea>
+              
+            </div>
+            
+            <p>Select the service category</p>
+            <select class="form-control" name="select" required ngModel required #select="ngModel" >
+                 <option value="a">a</option>
+                 <option value="b">b</option>
+                 <option value="c">c</option>
+            </select>
+          
+            
+          <button type="submit"  class="btn btn-success btn">Add Service</button>
+        </form>
+        </div>
+        <div class="sidebar">
+          <h4>Name of Lancers who registered their service</h4>
+            <mat-accordion *ngIf="lan != null">
+                <mat-expansion-panel *ngFor="let i of lan">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{i.name}}
+                        </mat-panel-title>
+                    
+            </mat-expansion-panel-header>
+            <h6>Service is added succesfully</h6>
+            </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+      </div>
+    </div>
+    
+  
+    
+    
+  

@@ -1,0 +1,15 @@
+.con{
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/24/22/57/ask-2341784__340.jpg");
+}
+.mainarea{
+    float: left;
+    width:70%;
+    border-right: 1px solid black;
+}
+.sidebar{
+    float: left;
+    width: 30%;
+    /* border-style: outset; */
+    padding: 2px;
+    
+}

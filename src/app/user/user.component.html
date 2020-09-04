@@ -1,0 +1,52 @@
+<h2 style="text-align: center;">Welcome customer</h2>
+<div class="con">
+   <div class="container-fluid">
+    
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <div class="nav navbar-nav navbar-right">
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <div class="mainarea">
+      <form (submit)=search(loc) #loc="ngForm">
+        <input class="form-control mr-sm-2" type="text" name="location" placeholder="Search by location" aria-label="Search" ngModel required #search="ngModel">
+        <br>
+        <button class="btn btn-success btn" type="submit">Search</button>
+      </form>
+      </div>
+      <div class="sidebar">
+          <label style="background:yellowgreen">Select by category</label>
+        <select class="form-control" name="select" required ngModel required #select="ngModel" >
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+       </select>
+      </div>
+   </div> 
+   <div class="row">
+        <mat-accordion *ngIf="lan != null">
+                <mat-expansion-panel *ngFor="let i of lan">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{i.name}}
+                        </mat-panel-title>
+                    
+            </mat-expansion-panel-header>
+            <h6>{{i.services}}</h6>
+            <h6>{{i.location}}</h6>
+            <h6>{{i.description}}</h6>
+            <h6>{{i.service_category}}</h6>
+            </mat-expansion-panel>
+            </mat-accordion>
+   </div>
+</div>

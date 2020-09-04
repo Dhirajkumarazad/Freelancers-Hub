@@ -1,0 +1,27 @@
+.con{
+    border-style:outset;
+    margin-top: 20px;
+    margin-bottom: 20px;border-radius: 1px;
+}
+.nava{
+    border-style:outset;
+    margin-top: 20px;
+    margin-bottom: 20px;border-radius: 1px;
+}
+.btn{
+    border-style:outset;
+    margin-top: 20px;
+    margin-bottom: 20px;border-radius: 1px;
+}
+.mainarea{
+    float: left;
+    width:66%;
+    border-right: 1px solid black;
+}
+.sidebar{
+    float: left;
+    width: 34%;
+    border-style: outset;
+    padding: 2px;
+    
+}

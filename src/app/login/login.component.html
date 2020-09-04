@@ -1,0 +1,172 @@
+<!-- 
+<div class="signin">
+    <form>
+        <h2 style="color: white">Log In</h2>
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="pass" placeholder="Password">
+        <br>
+        <br>
+        <a href="#"><input type="button" value="log In"></a>
+        <br>
+        <br>
+        <div id="container">    
+            <a href="#" style="margin-right: 0px; font-size: 13px; font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;">Reset Password</a>
+            <a href="#" style="margin-right: 0px; font-size: 13px; font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;">Forgot Password</a> 
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Don't have account? <a href="#">&nbsp;Sign Up</a>
+    </form>
+</div>
+
+
+
+  -->
+
+
+  <section id="form">
+        <div class="container form-container shadow mt-5">
+            <div class="row login-bg " style="position: relative">
+                
+     
+    
+                <!-- Form sign up start -->
+    
+            
+    
+                        <div id="form-sign-up-div" class="col-lg-5 d-flex flex-column justify-content-center">
+                            <div class="row d-flex justify-content-center ">
+                                <h2 class="text-primary ">Create Account</h2>
+                            </div>
+            
+                            <!-- <div class="row d-flex justify-content-center ">
+                                <div class="font-awsome d-flex my-4 ">
+                                    <i class="fa fa-instagram border rounded-circle shadow-sm "></i>
+                                    <i class="fa fa-google border rounded-circle shadow-sm mx-4 "></i>
+                                    <i class="fa fa-linkedin border rounded-circle shadow-sm "></i>
+                                </div>
+                            </div> -->
+                            <br>
+                            <div class="row ">
+                                <div class="offset-2 col-8 ">
+                                    <form class="d-flex flex-column flex-grow-1" (submit)="Signup(registerform)" #registerform="ngForm">
+                                        <!-- <div class="email-text d-flex justify-content-center">
+                                            <small id="emailHelp " class="form-text text-muted mb-3 ">or use your email for registration</small>
+            
+                                        </div> -->
+                                        <div class="input-group mb-3 ">
+            
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fa fa-address-book"></i> </span>
+                                            </div>
+                                            <input type="text " class="form-control border-left-0 " placeholder="Name " ngModel name="name" id="name" #name="ngModel">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control border-left-0" placeholder="Username" ngModel name="Email" id="loginID" #loginID="ngModel">
+                                        </div>
+                                        <div class="input-group ">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text bg-transparent px-3" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control border-left-0 " placeholder="Password " ngModel name="password" id="password" #password="ngModel">
+                                        </div>
+                                        <div class="input-group mt-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fa fa-address-book"></i></span>
+                                            </div>
+                                            <select class="form-control border-left-0" name="userType" id="userType" required ngModel #userType="ngModel">
+                                                            <option value="" disabled>--Login As--</option>
+                                                              <option value="Manager">Admin</option>
+                                                              <option value="Customer">User</option>
+                                                             
+                                                            </select>
+                                        </div>
+                                        <div class="row d-flex flex-column align-items-center ">
+            
+                                            <button type="submit " class="btn btn-primary btn-form my-4 ">SIGN UP</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                
+                <!-- Form sign up end -->
+                <div class="col-lg-2 text-center " style="padding-top: 225px">
+                    <h3>OR</h3>
+                </div>
+
+                <!-- form-Sign in start -->
+                
+    
+                <div id="form-sign-up-div" class="col-lg-5 d-flex flex-column justify-content-center">
+                    <div class="row d-flex justify-content-center ">
+                        <h2 class="text-primary">Sign In to FreelanceHub</h2>
+                    </div>
+    
+                    <!-- <div class="row d-flex justify-content-center ">
+                        <div class="font-awsome d-flex my-4 ">
+                            <i class="fa fa-instagram border rounded-circle shadow-sm "></i>
+                            <i class="fa fa-google border rounded-circle shadow-sm mx-4 "></i>
+                            <i class="fa fa-linkedin border rounded-circle shadow-sm "></i>
+                        </div>
+                    </div>
+     -->               <br>
+                    <div class="row ">
+                        <div class="offset-2 col-8 ">
+                            <form class="d-flex flex-column flex-grow-1" (submit)="userSignIn(loginform)" #loginform="ngForm">
+                                
+                                <!-- <div class="input-group mb-3 ">
+    
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fa fa-address-book"></i> </span>
+                                    </div>
+                                    <input type="text " class="form-control border-left-0 " placeholder="Name " ngModel name="name" id="name" #name="ngModel">
+                                </div> -->
+                                <div class="input-group mb-3">
+    
+                                        <div class="input-group-prepend ">
+                                            <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                        </div>
+                                        <input type="email" required class="form-control border-left-0 " aria-describedby="emailHelp" placeholder="Email" id="loginID1" name="Email" ngModel required #usernames="ngModel">
+                                        <!-- <p *ngIf="usernames.invalid">email required</p> -->
+                                    </div>
+                                    <div class="input-group">
+        
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control border-left-0" placeholder="Password" name="password" id="password1" required ngModel required #password="ngModel">
+                                    </div>
+                                    <div class="input-group mt-3">
+                                        <div class="input-group-prepend ">
+                                            <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fa fa-address-book"></i></span>
+                                        </div>
+                                        <select class="form-control border-left-0" id="userType1" name="userType" required ngModel required #selectdata="ngModel">
+                                            <option value="" disabled>--Login As--</option>
+                                              <option value="Manager">Admin</option>
+                                              <option value="Customer">User</option>
+                                             
+                                            </select>
+                                    </div>
+                                <div class="row d-flex flex-column align-items-center ">
+    
+                                    <button type="submit " class="btn btn-primary btn-form my-4 ">SIGN IN</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- form-Sign in end -->   
+    
+            </div>
+        </div>
+    
+    </section>
